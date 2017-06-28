@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ryde"
+    android:versionCode="4"
+    android:versionName="1.03" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-feature android:name="android.hardware.location.gps"/>
+
+    <!--google map-->
+    <uses-permission android:name="com.example.mapdemo.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
+    <uses-library android:name="com.google.android.maps"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_ryde"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <uses-library android:required="true" android:name="com.google.android.maps" />
+
+        <!-- his -->
+        <!--<meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAAPMHNwe1x5nF9C1FOcKKWhHW-ErHDpZg" />-->
+
+        <!--<meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBpXq7ZSSMKoLcbWI2wcLywJ9pxhGHG4Pc" />-->
+
+        <!-- his mal web -->
+        <!--<meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCTx-FYGnRAlfsYhFoXMMyWn8rneotk7JU" />-->
+
+        <!-- his mal mobile -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBzTXTUtSuPWOLAC3VTHSMaPHyHq2BQzTg" />
+
+
+
+
+        <!--<meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyATNZkRdNfiHwtiP48d9fVbN5Ukd1uXCHg" />-->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity><!--|adjustResize-->
+
+        <activity
+            android:name="SettingsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+    </application>
+</manifest>

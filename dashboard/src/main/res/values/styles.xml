@@ -1,0 +1,62 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+    </style>
+
+  <style name="edittext" parent="android:Widget.Holo.Light.EditText">
+        <item name="android:background">@drawable/edittext_bg</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:drawablePadding">@dimen/pad_10dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/main_grey</item>
+        <item name="android:textSize">@dimen/txt_15sp</item>
+    </style>
+    
+    <style name="btn" parent="android:Widget.Holo.Light.Button">
+        <item name="android:minHeight">1dp</item>
+        <item name="android:minWidth">1dp</item>
+    </style>
+   
+    <style name="lbl_feed1" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:minWidth">@dimen/pad_80dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="lbl_feed2" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="lbl_ch2" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/txt_16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="lbl_ch1" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:minWidth">@dimen/pad_125dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/txt_14sp</item>
+    </style>
+    <style name="lbl_ch3" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textColor">@color/main_green</item>
+        <item name="android:textSize">@dimen/txt_12sp</item>
+    </style>
+    <style name="lbl_ch4" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textColor">@color/main_grey_dk</item>
+        <item name="android:textSize">@dimen/txt_13sp</item>
+    </style>
+
+    <color name="transparent_color">#00000000</color>
+    <style name="Theme.Transparent" parent="android:Theme.Translucent">
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:windowBackground">@color/transparent_color</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>-->
+    </style>
+</resources>

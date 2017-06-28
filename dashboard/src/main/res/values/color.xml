@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+
+    <color name="red_light">#e74c3c</color>
+    <color name="gray_dk">#313031</color>
+    <color name="white_smoke">#F7F7F7</color>
+    <color name="white">#ffffff</color>
+    <drawable name="white">#ffffff</drawable>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue_sky">#33b5e5</color>
+    <color name="gray">#5B5B5B</color>
+    <drawable name="trans_draw">#00000000</drawable>
+
+
+
+    <color name="main_color">#252f39</color>
+    <color name="main_color_dk">#1d252d</color>
+    <color name="main_color_lt">#2e3c49</color>
+    <color name="main_grey">#92979c</color>
+    <color name="main_grey_dk">#808080</color>
+    <color name="main_blue">#19b4cc</color>
+    <color name="main_blue_lt">#7c8b9c</color>
+    <color name="main_blue_dk">#16889a</color>
+    <color name="main_red">#EC384D</color>
+    <color name="main_green">#27AE60</color>
+    <color name="main_skyblue">#edf3f4</color>
+
+
+    <color name="color_text_blue">#105F8E</color>
+    <color name="color_action_bar_top">#2C88B7</color>
+    <color name="color_action_bar_below">#13628B</color>
+    <color name="color_text_black">#222</color>
+    <color name="color_text_green">#00B050</color>
+
+    <color name="color_btn_green">#009900</color>
+
+
+    <color name="fareColor">#49acf8</color>
+    <color name="btnBackColor">#E74B3C</color>
+    <color name="editBackColor">#DFDFDF</color>
+    <color name="editBackColor1">#FBF9FA</color>
+    <color name="topBarColor">#5ab9e9</color>
+    <color name="editBackBlueColor">#CEEBF9</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorTextLabelLogin">#2fa881</color>
+    <color name="colorTransparentBlack">#88000000</color>
+</resources>

@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:layout_weight="1">
+
+            <com.google.android.gms.maps.MapView
+                android:layout_below="@+id/reLayTopBar"
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:layout_weight="1.8"
+            android:background="@color/colorWhite">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/margin_20"
+                    android:paddingRight="@dimen/margin_20"
+                    android:gravity="center_horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_weight="5.7">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/shape_edit_back3">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="@dimen/margin_1"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/margin_1"
+                                    android:gravity="center_vertical"
+                                    android:layout_weight="1">
+
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="match_parent"
+                                        android:padding="@dimen/margin_2"
+                                        android:layout_marginLeft="@dimen/margin_5"
+                                        android:src="@drawable/ic_wcar_on"/>
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <LinearLayout
+                                            android:layout_width="@dimen/margin_1"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1.2">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center_vertical"
+                                                android:text="On Route"
+                                                android:textSize="14sp"/>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="@dimen/margin_1"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1">
+
+                                            <ImageView
+                                                android:id="@+id/imgCompanyLogo"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:padding="@dimen/margin_3"
+                                                android:src="@drawable/ic_6pgrab"/>
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/margin_1"
+                                    android:background="@color/editBackColor">
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/margin_1"
+                                    android:layout_weight="4">
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="40dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="@dimen/margin_2"
+                                        android:gravity="bottom">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp">
+
+                                            <ImageView
+                                                android:layout_width="40dp"
+                                                android:layout_height="match_parent"
+                                                android:padding="@dimen/margin_5"
+                                                android:layout_marginLeft="@dimen/margin_5"
+                                                android:src="@drawable/ic_wuniform"/>
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="40dp">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/margin_1"
+                                            android:layout_weight="3">
+
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:padding="@dimen/margin_5"
+                                                android:src="@drawable/dummy2"/>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/margin_1"
+                                            android:gravity="center_vertical"
+                                            android:layout_weight="1">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center_vertical"
+                                                android:text="Loren Fran"
+                                                android:textColor="@color/topBarColor"/>
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="40dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="@dimen/margin_2"
+                                        android:gravity="bottom">
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/margin_1"
+                                    android:background="@color/editBackColor">
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/margin_1"
+                                    android:layout_weight="1.5">
+
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="match_parent"
+                                        android:padding="@dimen/margin_5"
+                                        android:layout_marginLeft="@dimen/margin_5"
+                                        android:src="@drawable/ic_map_pin_blue"/>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/margin_7"
+                                            android:text="Pickup Point"
+                                            android:textSize="@dimen/text_size11"/>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Kl Se, Kuala"
+                                            android:textColor="@color/gray"
+                                            android:textSize="@dimen/text_size11"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/margin_1"
+                                android:layout_height="match_parent"
+                                android:background="@color/editBackColor">
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="@dimen/margin_1"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/margin_1"
+                                    android:gravity="center_vertical"
+                                    android:layout_weight="1">
+
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="match_parent"
+                                        android:padding="@dimen/margin_2"
+                                        android:layout_marginLeft="@dimen/margin_5"
+                                        android:src="@drawable/ic_wclock"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center_vertical"
+                                        android:text="4:00 minutes"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/margin_1"
+                                    android:background="@color/editBackColor">
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/margin_1"
+                                    android:layout_weight="4">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/margin_1"
+                                        android:layout_weight="1">
+
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="@dimen/margin_10"
+                                            android:layout_marginBottom="@dimen/margin_22"
+                                            android:layout_marginLeft="@dimen/margin_5"
+                                            android:src="@drawable/ic_wcar_off"/>
+
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/margin_15"
+                                                android:text="Car Plate Number"
+                                                android:textColor="@color/gray"
+                                                android:textSize="@dimen/text_size12"/>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AQ2324343"
+                                                android:textColor="@color/gray"
+                                                android:textSize="@dimen/text_size11"/>
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/margin_1"
+                                        android:background="@color/editBackColor">
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/margin_1"
+                                        android:layout_weight="1">
+
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="@dimen/margin_10"
+                                            android:layout_marginBottom="@dimen/margin_22"
+                                            android:layout_marginLeft="@dimen/margin_5"
+                                            android:src="@drawable/ic_wcar_color"/>
+
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/margin_15"
+                                                android:text="Car Color"
+                                                android:textColor="@color/gray"
+                                                android:textSize="@dimen/text_size12"/>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Red"
+                                                android:textColor="@color/gray"
+                                                android:textSize="@dimen/text_size11"/>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/margin_1"
+                                    android:background="@color/editBackColor">
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/margin_1"
+                                    android:layout_weight="1.5"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="match_parent"
+                                        android:padding="@dimen/margin_5"
+                                        android:layout_marginLeft="@dimen/margin_5"
+                                        android:src="@drawable/ic_map_pin_red"/>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/margin_7"
+                                            android:text="Drop Off"
+                                            android:textSize="@dimen/text_size11"/>
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="KLIA, Kuala"
+                                            android:textColor="@color/gray"
+                                            android:textSize="@dimen/text_size11"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/margin_1"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Contact"
+                                android:textColor="@color/white"
+                                android:background="@drawable/shape_btn_back"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/margin_15"
+                            android:layout_height="match_parent">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/margin_1"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="Cancel"
+                                android:textColor="@color/white"
+                                android:background="@drawable/shape_btn_back1"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:layout_weight="2">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="@dimen/margin_25"
+                            android:paddingRight="@dimen/margin_25"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/shape_edit_back">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_1"
+                                android:layout_marginTop="@dimen/margin_5"
+                                android:layout_marginBottom="@dimen/margin_3"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="@dimen/margin_1"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerVertical="true"
+                                        android:gravity="center_vertical"
+                                        android:text="Compare Fare"/>
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="@dimen/margin_1"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.5">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="@dimen/margin_2"
+                                        android:layout_centerVertical="true"
+                                        android:gravity="center_vertical"
+                                        android:text="RM"/>
+
+                                    <TextView
+                                        android:id="@+id/tvCompareFare"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerVertical="true"
+                                        android:gravity="center_vertical"
+                                        android:singleLine="true"
+                                        android:background="@drawable/shape_edit_back1"/>
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="@dimen/margin_1"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/margin_1"
+                                android:layout_marginTop="@dimen/margin_3"
+                                android:layout_marginBottom="@dimen/margin_5"
+                                android:layout_weight="1">
+
+                                <RelativeLayout
+                                    android:layout_width="@dimen/margin_1"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerVertical="true"
+                                        android:gravity="center_vertical"
+                                        android:text="Ryde Fare"/>
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="@dimen/margin_1"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.5">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="@dimen/margin_2"
+                                        android:layout_centerVertical="true"
+                                        android:gravity="center_vertical"
+                                        android:text="RM"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_centerVertical="true"
+                                        android:gravity="center_vertical"
+                                        android:singleLine="true"
+                                        android:background="@drawable/shape_edit_back1"/>
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="@dimen/margin_1"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

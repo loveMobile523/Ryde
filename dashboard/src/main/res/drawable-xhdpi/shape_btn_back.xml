@@ -1,0 +1,14 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="@color/topBarColor" />
+
+    <stroke
+        android:width="2dp"
+        android:color="@color/topBarColor" />
+
+    <corners
+        android:bottomLeftRadius="@dimen/margin_7"
+        android:bottomRightRadius="@dimen/margin_7"
+        android:topLeftRadius="@dimen/margin_7"
+        android:topRightRadius="@dimen/margin_7" />
+</shape>
